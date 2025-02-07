@@ -39,13 +39,12 @@ function calculate() {
             display.value = result;
         }
 
-        // Эффект мигания кнопки "="
         const equalsButton = document.querySelector(".equals");
         equalsButton.classList.add("active");
 
         setTimeout(() => {
             equalsButton.classList.remove("active");
-        }, 200); // Через 200 мс кнопка вернётся в нормальное состояние
+        }, 200);
 
     } catch {
         display.value = "Error";
